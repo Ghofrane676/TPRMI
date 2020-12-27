@@ -10,29 +10,24 @@ public class Server extends UnicastRemoteObject implements MyInterface {
     public String sayHello() {
         return "Hello World !!";
     }
-    public class CompteBancaire()
-    {
-    float s ;
-    public CompteBancaire(float s)
-    {
-    this.s=s;
-    }
-     public CompteBancaire debiter(float x)
+  
+   
+     public String debiter(float x)
     {
     if (solde<x)
     return "solde inférieuré ;
     else
     {solde=solde-x;
     return "solde débité";}
-    
     }
-     public CompteBancaire crediter(float x)
+    
+     public double crediter(float x)
     {
-    return s+x;
+    return solde+x;
     }
     
-    public float lireSolde()
-    {return "votre solde courant est"+s;}
+    public String lireSolde()
+    {return "votre solde courant est"+solde;}
     }
    
 
