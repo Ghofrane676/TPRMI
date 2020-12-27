@@ -8,7 +8,7 @@ public class Client {
             MyInterface service1 = (MyInterface) Naming.lookup("rmi://127.0.0.1:1250/server");
             service1.crediter(700);
             service1.debiter(30);
-            System.out.println(service1.());
+            System.out.println(service1.lireSolde());
 
         } catch (Exception e) {
             System.out.println("Error");
