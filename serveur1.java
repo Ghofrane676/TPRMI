@@ -15,7 +15,7 @@ public class Server extends UnicastRemoteObject implements MyInterface {
      public String debiter(float x)
     {
     if (solde<x)
-    return "solde inférieuré ;
+    return "solde inférieuré" ;
     else
     {solde=solde-x;
     return "solde débité";}
